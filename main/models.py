@@ -1,7 +1,9 @@
 from django.db import models
 
 
-from django.db import models
+class ActiveManager(models.Manager):
+    def active(self):
+        return self.filter(active=True)
 
 
 class Product(models.Model):
@@ -12,6 +14,7 @@ class Product(models.Model):
     active = models.BooleanField(default=True)
     in_stock = models.BooleanField(default=True)
     date_updated = models.DateTimeField(auto_now=True)
+    objects = ActiveManager()
 
 
 class ProductImage(models.Model):
@@ -26,4 +29,6 @@ class ProductTag(models.Model):
     slug = models.SlugField(max_length=48)
     description = models.TextField(blank=True)
     active = models.BooleanField(default=True)
+
+
 

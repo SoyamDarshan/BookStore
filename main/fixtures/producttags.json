@@ -1,0 +1,56 @@
+[
+{
+    "model": "main.producttag",
+    "fields": {
+        "name": "Life",
+        "slug": "life",
+        "description": "Discover yourself",
+        "active": true
+    }
+},
+{
+    "model": "main.producttag",
+    "fields": {
+        "name": "Thriller",
+        "slug": "thriller",
+        "description": "Murder mystery",
+        "active": true
+    }
+},
+{
+    "model": "main.producttag",
+    "fields": {
+        "name": "Romance",
+        "slug": "romance",
+        "description": "Love, Romance",
+        "active": true
+    }
+},
+{
+    "model": "main.producttag",
+    "fields": {
+        "name": "Drama",
+        "slug": "drama",
+        "description": "drama, slow",
+        "active": true
+    }
+},
+{
+    "model": "main.producttag",
+    "fields": {
+        "name": "Sci-Fi",
+        "slug": "sci-fi",
+        "description": "science fiction, fantasy",
+        "active": true
+    }
+},
+{
+    "model": "main.producttag",
+    "fields": {
+        "name": "Finance",
+        "slug": "finance",
+        "description": "",
+        "active": true
+    }
+}
+]

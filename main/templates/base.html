@@ -30,16 +30,32 @@
                 <li class="nav-item {% if request.path == '/products/all/' %} active {% endif %}">
                     <a class="nav-link" href="/products/all/">Products</a>
                 </li>
+                <li class="nav-item {% if request.path == '/signup/' %} active {% endif %}">
+                    <a class="nav-link" href="/signup/">Sign Up</a>
+                </li>
+                <li class="nav-item {% if request.path == '/login/' %} active {% endif %}">
+                    <a class="nav-link" href="/login/">Login</a>
+                </li>
+
             </ul>
         </div>
     </nav>
 
+{% for message in messages %}
+    <div class="alert alert-{{ message.tags }}">
+        {{ message }}
+    </div>
+{% endfor %}
 
+<div class="container">
     {% block content %}
 
 
-    {% endblock content %}
 
+
+
+    {% endblock content %}
+</div>
     <script
       src="{% static 'js/jquery.min.js' %}">
     </script>
